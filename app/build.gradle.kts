@@ -23,12 +23,13 @@ dependencies {
 
     // This dependency is used by the application.
     implementation(libs.guava)
+    implementation("mysql:mysql-connector-java:8.0.33")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
 
